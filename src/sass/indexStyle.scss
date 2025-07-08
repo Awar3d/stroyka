@@ -246,7 +246,7 @@
 
   .license__list{
     display: flex;
-    gap: 35px;
+    justify-content: space-between;
   }
 }
 
@@ -326,8 +326,8 @@
 
     .partners__list{
       display: flex;
-      gap: 8px;
       list-style: none;
+      justify-content: space-between;
     }
 
     .partners__item{
@@ -372,12 +372,12 @@
     }
 
     .news__item{
-      display: flex;
-      flex-direction: column;
+      display: grid;
 
-        .news__img-big{
-          width: 493px;
-          height: 268px;
+        .news__img{
+          width: 100%;
+          max-height: 234px;
+          margin-bottom: 10px;
         }
 
         .news__date{
