@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurylys</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contactsStyle.css">
+    <script defer src="./scripts/script.js"></script>
+  </head>
+  <body> 
+    <header class="header__wrap">
+      <div class="container"> 
+        <div class="header"><img class="header__img" src="./img/headerLogo.png" alt="логотип компаний Курылыс">
+          <ul class="header__list"> 
+            <li class="header__item" href="index.html"><a class="header__link" href="/">Главная</a></li>
+            <li class="header__item" href="about.html"><a class="header__link" href="about.html">О нас</a></li>
+            <li class="header__item" href="projects.html"><a class="header__link" href="projects.html">Проекты</a></li>
+            <li class="header__item active" href="contacts.html"><a class="header__link" href="contacts.html">Контакты</a></li>
+            <li class="header__item" href="news.html"><a class="header__link" href="news.html">Новости</a></li>
+          </ul>
+          <div class="header__btnWrap"> 
+            <button class="button__btn language">Рус</button>
+            <button class="button__btn">En</button>
+          </div>
+        </div>
+        <div class="hero">
+          <h1 class="hero__title">Контакты</h1>
+          <p class="hero__descr">Свяжитесь с&nbsp;нами любым удобным способом</p>
+          <div class="hero__btnWrap"> 
+            <button class="primaryBtn"><a href="projects.html"> Наши проекты</a>
+              <svg class="hero__btnSvg"> 
+                <use xlink:href="./img/sprite.svg#ourProjects"></use>
+              </svg>
+            </button>
+            <button class="secondaryBtn"> <a href="#bid">Связаться с&nbsp;нами</a></button>
+          </div><a class="hero__anchor" href="#onMap"> 
+            <svg class="hero__svg-anchor"> 
+              <use xlink:href="./img/sprite.svg#anchor"></use>
+            </svg></a>
+        </div>
+      </div>
+    </header>
+    <main> 
+      <section class="onMap" id="onMap"> 
+        <div class="container"> 
+          <div class="onMap__content"> 
+            <div class="onMap__info"> 
+              <div class="onMap__location"> 
+                <div class="onMap__infoWrap"> 
+                  <svg class="onMap__svg"> 
+                    <use xlink:href="./img/sprite.svg#local"></use>
+                  </svg><span class="onMap__hard">Казахстан, г. Название, дом&nbsp;12</span>
+                </div>
+                <div class="onMap__infoWrap"> 
+                  <svg class="onMap__svg"> 
+                    <use xlink:href="./img/sprite.svg#google"></use>
+                  </svg><span class="onMap__soft">Google maps</span>
+                </div>
+                <div class="onMap__infoWrap"> 
+                  <svg class="onMap__svg"> 
+                    <use xlink:href="./img/sprite.svg#gis"></use>
+                  </svg><span class="onMap__soft">2GIS/2ГИС</span>
+                </div>
+              </div>
+              <div class="onMap__time"> 
+                <div class="onMap__infoWrap"> 
+                  <svg class="onMap__svg"> 
+                    <use xlink:href="./img/sprite.svg#time"></use>
+                  </svg>
+                  <div class="onMap__timeWrap"> <span class="onMap__soft">Пн-Пт: 08:30-17:30</span><span class="onMap__soft">Сб-Вс: выходной</span></div>
+                </div>
+              </div>
+              <div class="onMap__contact">
+                <div class="onMap__infoWrap"> 
+                  <svg class="onMap__svg"> 
+                    <use xlink:href="./img/sprite.svg#call"></use>
+                  </svg><span class="onMap__soft">+7 (777) 777 77&nbsp;77</span>
+                </div>
+                <div class="onMap__infoWrap"> 
+                  <svg class="onMap__svg"> 
+                    <use xlink:href="./img/sprite.svg#mail"></use>
+                  </svg><span class="onMap__soft">info@primer.kz</span>
+                </div>
+              </div>
+            </div><img class="onMap__image" src="../img/onMap.png" alt="на карте">
+          </div>
+        </div>
+      </section>
+      <section class="bid" id="bid"> 
+        <div class="container"> 
+          <div class="bid__content"> 
+            <h2 class="titleWhite bid__title">Оставьте заявку</h2>
+            <p class="bid__descr">Оставьте заявку и&nbsp;наш менеджер свяжется с&nbsp;Вами в&nbsp;ближайшее рабочее время.</p>
+            <div class="bid__inputWrap"> 
+              <input class="bid__input bid__input-first" type="text" placeholder="Ваше имя">
+              <input class="bid__input bid__input-second" type="tel" placeholder="Телефон">
+              <input class="bid__input bid__input-big" type="text" placeholder="Суть обращения">
+            </div>
+            <button class="bid__button">Отправить</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer__wrap"> 
+      <div class="container"> 
+        <div class="footer"> 
+          <div class="footer__up"> <img class="footer__logo" src="./img/headerLogo.png" alt="логотип компаний Курылыс">
+            <ul class="footer__list"> 
+              <li class="footer__item" href="index.html"><a class="footer__link" href="/">Главная</a></li>
+              <li class="footer__item" href="about.html"><a class="footer__link" href="about.html">О нас</a></li>
+              <li class="footer__item" href="projects.html"><a class="footer__link" href="projects.html">Проекты</a></li>
+              <li class="footer__item active" href="contacts.html"><a class="footer__link" href="contacts.html">Контакты</a></li>
+              <li class="footer__item" href="news.html"><a class="footer__link" href="news.html">Новости</a></li>
+            </ul>
+            <div class="footer__contacts"> <span class="footer__item">Контакты</span><span class="footer__item-soft">Адрес: Казахстан, г. Название, дом&nbsp;12</span><span class="footer__item-soft">Телефон: +7 (777) 777 77&nbsp;77</span></div>
+          </div>
+          <div class="footer__down"> <span class="footer__item-soft">ABC DESIGN</span>
+            <svg class="footer__svg"> 
+              <use xlink:href="./img/sprite.svg#insta"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
