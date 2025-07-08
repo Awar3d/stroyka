@@ -204,7 +204,7 @@ body {
 
 .hero__anchor {
   position: absolute;
-  left: 600px;
+  left: 50%;
   bottom: 114px;
 }
 .hero__anchor .hero__svg-anchor {
