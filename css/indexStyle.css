@@ -216,7 +216,7 @@
 }
 .license .license__list {
   display: flex;
-  gap: 35px;
+  justify-content: space-between;
 }
 
 .questions {
@@ -287,8 +287,8 @@
 }
 .partners .partners__content .partners__list {
   display: flex;
-  gap: 8px;
   list-style: none;
+  justify-content: space-between;
 }
 .partners .partners__content .partners__item {
   padding: 35px 67px;
@@ -326,12 +326,12 @@
   list-style: none;
 }
 .news .news__content .news__item {
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
-.news .news__content .news__item .news__img-big {
-  width: 493px;
-  height: 268px;
+.news .news__content .news__item .news__img {
+  width: 100%;
+  max-height: 234px;
+  margin-bottom: 10px;
 }
 .news .news__content .news__item .news__date {
   color: #666666;

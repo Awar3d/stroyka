@@ -119,6 +119,7 @@
 .mission {
   background-image: url("../img/mission.png");
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 80px 72px 182px;
   margin-bottom: 70px;
 }
