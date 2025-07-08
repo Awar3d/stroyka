@@ -1,0 +1,51 @@
+.primaryBtn{
+  padding: 14.5px 29.5px;
+  font-family: SF Pro Display;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  display: flex;
+  border-radius: 100px;
+  gap: 10px;
+  color: #fff;
+  background-color: #345389;
+}
+
+.secondaryBtn{
+  font-family: SF Pro Display;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  padding: 14.5px 26px;
+  border-radius: 100px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  color: #fff;
+}
+
+.secondaryBtnBlack{
+  font-family: Open Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  padding: 13px 22px;
+  border: 1px solid #1D1D1D;
+  color: #1D1D1D;
+  background-color: transparent;
+  border-radius: 100px;
+}
+
+.title{
+  font-family: Fira Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 48px;
+}
+
+.titleWhite{
+  color: #fff;
+  font-family: Fira Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 48px;
+}

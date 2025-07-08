@@ -1,0 +1,205 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Kurylys
+    link(rel="stylesheet", href="./css/style.css")
+    link(rel="stylesheet", href="./css/indexStyle.css")
+    script(defer, src="./scripts/script.js")
+  body 
+    - var page = 'home'
+    - var advantages = [{img: '../img/advantages_first.png', title: 'Гарантия качества', descr: 'Строим по стандартам, используем сертифицированные материалы и проверенные технологии.'},{img: '../img/advantages_second.png', title: 'Соблюдение сроков', descr: 'Работаем по чёткому плану и сдаём объекты точно в оговорённые сроки.'},{img: '../img/advantages_third.png', title: 'Безопасность на первом месте', descr: 'Соблюдаем строительные, санитарные и противопожарные нормы на всех этапах.'},{img: '../img/advantages_fourth.png', title: 'Прозрачная смета', descr: 'Честный расчёт стоимости без скрытых услуг и неожиданных доплат.'},{img: '../img/advantages_fifth.png', title: 'Индивидуальный подход', descr: 'Учитываем задачи, бюджет и особенности объекта каждого клиента.'},{img: '../img/advantages_sixth.png', title: 'Опытная команда', descr: 'Над проектами работают квалифицированные инженеры, архитекторы и строители.'}]
+    - var specs = [{descr: 'Строительство промышленных и гражданских зданий и сооружений '}, {descr: 'Проектно-изыскательские работы в строительстве'}, {descr: 'Экспертные работы и инжиниринговые услуги в строительстве'}, {descr: 'Реконструкция и капитальный ремонт '}, {descr: 'Реставрационные работы'}, {descr: 'Прочие стрительно-монтажные работы'}]
+    - var questions = [{number: '01', question: 'Сколько времени занимает строительство объекта?', answer: 'Сроки зависят от масштаба проекта, но мы всегда обсуждаем график заранее и строго его соблюдаем.'}, {number: '02', question: 'Сколько стоит строительство под ключ?', answer: ''}, {number: '03', question: 'Какие документы вы предоставляете?', answer: ''}, {number: '04', question: 'Вы работаете только в Астане или по всему Казахстану?', answer: ''}, {number: '05', question: 'Можно ли использовать свои материалы?', answer: ''}, {number: '06', question: 'Есть ли гарантия на выполненные работы?', answer: ''},]
+    header.header__wrap
+      .container 
+        include __header.pug
+        .hero
+          h1.hero__title СТРОИМ КАЧЕСТВЕННО И&nbsp;БЕЗОПАСНО
+          .hero__btnWrap 
+            button.primaryBtn
+              a(href="projects.html")  Наши проекты
+              svg.hero__btnSvg 
+                use(xlink:href="./img/sprite.svg#ourProjects")
+            button.secondaryBtn 
+              a(href="contacts.html") Связаться с&nbsp;нами
+          span.hero__span
+            svg.hero__svg
+              use(xlink:href="./img/sprite.svg#whatsapp")
+          a(href="#about").hero__anchor 
+            svg.hero__svg-anchor 
+              use(xlink:href="./img/sprite.svg#anchor")
+    main 
+      section#about.aboutCompany
+        .container
+          .aboutCompany__content 
+            .aboutCompany__left 
+              .aboutCompany__quadro  
+                h3.aboutCompany__devTitle 100+
+                span.aboutCompany__descr Текст, который нужно вставить. Текст, который нужно вставить.
+              .aboutCompany__quadro  
+                h3.aboutCompany__devTitle 100+
+                span.aboutCompany__descr Текст, который нужно вставить. Текст, который нужно вставить.
+              .aboutCompany__quadro  
+                h3.aboutCompany__devTitle 100+
+                span.aboutCompany__descr Текст, который нужно вставить. Текст, который нужно вставить.
+              .aboutCompany__quadro  
+                h3.aboutCompany__devTitle 100+
+                span.aboutCompany__descr Текст, который нужно вставить. Текст, который нужно вставить.
+            .aboutCompany__right 
+              h2.aboutCompany__title О&nbsp;компании
+              .aboutCompany__textWrap 
+                span.aboutCompany__descr Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании.
+                span.aboutCompany__descr Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании.
+              .hero__btnWrap 
+                button.primaryBtn
+                  a(href="projects.html")  Наши проекты
+                  svg.hero__btnSvg 
+                    use(xlink:href="./img/sprite.svg#ourProjects")
+                button.secondaryBtnBlack 
+                  a(href="contacts.html") Связаться с&nbsp;нами
+      section.projects 
+        .container 
+          .projects__content
+            h2.projects__title Наши проекты
+            .projects__wrapper 
+              .projects__case
+                h3.projects__devtitle НАЗВАНИЕ ОДНОГО ИЗ&nbsp;ВАШИХ ПРОЕКТОВ
+                span.projects__descr Текст описание вашего проекта. Вам нужно будет предоставить нужную инормацию. Текст описание вашего проекта. Вам нужно будет предоставить нужную инормацию. Текст описание вашего проекта. Вам нужно будет предоставить нужную инормацию.
+                a(href="cardProject.html").projects__button 
+                  | Посмотреть проект
+                  svg.projects__svg
+                    use(xlink:href='./img/sprite.svg#ourProjectsWhite')
+              img(src="../img/projectImage.png", alt="фото проекта")
+              img(src="../img/projectImage.png", alt="фото проекта")
+              img(src="../img/projectImage.png", alt="фото проекта")
+      section.advantages
+        .container 
+          .advantages__content 
+            h2.advantages__title Наши преимущества
+            ul.advantages__list 
+              each advantage in advantages
+                li.advantages__item
+                  img.advantages__img(src=advantage.img, alt="иконка работы")
+                  h3.advantages__divtitle=advantage.title
+                  p.advantages__descr=advantage.descr
+      section.spec 
+        .container 
+          .spec__content 
+            h2.spec__title На&nbsp;чём специализируется наша компания
+            ul.spec__list 
+              each spec in specs
+                li.spec__item=spec.descr
+      section.license
+        .container 
+          .license__content 
+            h2.license__title Лицензии и&nbsp;сертификаты
+            ul.license__list 
+              li.license__item
+                img.license__image(src="../img/license.png", alt="фото лицензий")
+              li.license__item
+                img.license__image(src="../img/license.png", alt="фото лицензий")
+              li.license__item
+                img.license__image(src="../img/license.png", alt="фото лицензий")
+              li.license__item
+                img.license__image(src="../img/license.png", alt="фото лицензий")
+      section.questions 
+        .container 
+          .questions__content 
+            h2.questions__title Часто задаваемые вопросы
+            ul.questions__list 
+              each quest in questions
+                li.questions__item
+                  span.questions__num=quest.number
+                  .questions__wrap 
+                    p.questions__ask=quest.question
+                    span.questions__ans=quest.answer
+      section.partners 
+        .container 
+          .partners__content 
+            h2.partners__title Наши партнеры
+            ul.partners__list 
+              - for (var i = 1; i <= 5; i++)
+                li.partners__item лого
+      section.news 
+        .container 
+          .news__content 
+            h2.news__title Новости
+            ul.news__list 
+              li.news__item
+                img.news__img-big(src="../img/news.png", alt="фото новостей")
+                span.news__date 01.05.2025
+                h3.news__subtitle Название новости
+                p.news__descr Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости.
+              li.news__item
+                img.news__img(src="../img/news.png", alt="фото новостей")
+                span.news__date 01.05.2025
+                h3.news__subtitle Название новости
+                p.news__descr Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости.
+              li.news__item
+                img.news__img(src="../img/news.png", alt="фото новостей")
+                span.news__date 01.05.2025
+                h3.news__subtitle Название новости
+                p.news__descr Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости.
+            ul.news__list-down 
+              li.news__item
+                img.news__img(src="../img/news.png", alt="фото новостей")
+                span.news__date 01.05.2025
+                h3.news__subtitle Название новости
+                p.news__descr Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости.
+              li.news__item
+                img.news__img(src="../img/news.png", alt="фото новостей")
+                span.news__date 01.05.2025
+                h3.news__subtitle Название новости
+                p.news__descr Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости.
+              li.news__item
+                img.news__img-big(src="../img/news.png", alt="фото новостей")
+                span.news__date 01.05.2025
+                h3.news__subtitle Название новости
+                p.news__descr Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости.
+      section.bid 
+        .container 
+          .bid__content 
+            .bid__info 
+              .bid__location 
+                .bid__infoWrap 
+                  svg.bid__svg 
+                    use(xlink:href="./img/sprite.svg#local")
+                  span.bid__hard Казахстан, г. Название, дом&nbsp;12
+                .bid__infoWrap 
+                  svg.bid__svg 
+                    use(xlink:href="./img/sprite.svg#google")
+                  span.bid__soft Google maps
+                .bid__infoWrap 
+                  svg.bid__svg 
+                    use(xlink:href="./img/sprite.svg#gis")
+                  span.bid__soft 2GIS/2ГИС
+              .bid__time 
+                .bid__infoWrap 
+                  svg.bid__svg 
+                    use(xlink:href="./img/sprite.svg#time")
+                  .bid__timeWrap 
+                    span.bid__soft Пн-Пт: 08:30-17:30
+                    span.bid__soft Сб-Вс: выходной
+              .bid__contact
+                .bid__infoWrap 
+                  svg.bid__svg 
+                    use(xlink:href="./img/sprite.svg#call")
+                  span.bid__soft +7 (777) 777 77&nbsp;77
+                .bid__infoWrap 
+                  svg.bid__svg 
+                    use(xlink:href="./img/sprite.svg#mail")
+                  span.bid__soft info@primer.kz
+            .bid__form 
+              h2.bid__title Оставьте заявку
+              span.bid__descr Оставьте заявку и&nbsp;наш менеджер свяжется с&nbsp;Вами в&nbsp;ближайшее рабочее время.
+              .bid__inputWrap 
+                input.bid__input.bid__input-first(type="text", placeholder="Ваше имя")
+                input.bid__input.bid__input-second(type="tel", placeholder="Телефон")
+                input.bid__input.bid__input-big(type="text", placeholder="Суть обращения")
+              button.bid__button Отправить
+    footer.footer__wrap
+      .container 
+        include __footer.pug
+    footer 

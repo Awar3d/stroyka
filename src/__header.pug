@@ -1,0 +1,16 @@
+.header
+  img.header__img(src="./img/headerLogo.png", alt="логотип компаний Курылыс")
+  ul.header__list 
+    li.header__item(class=page === 'home' ? 'active' : '', href="index.html")
+      a.header__link(href="/") Главная
+    li.header__item(class=page === 'about' ? 'active' : '', href="about.html")
+      a.header__link(href="about.html") О нас
+    li.header__item(class=page === 'projects' ? 'active' : '', href="projects.html")
+      a.header__link(href="projects.html") Проекты
+    li.header__item(class=page === 'contacts' ? 'active' : '', href="contacts.html")
+      a.header__link(href="contacts.html") Контакты
+    li.header__item(class=page === 'news' ? 'active' : '', href="news.html")
+      a.header__link(href="news.html") Новости
+  .header__btnWrap 
+    button.button__btn.language Рус
+    button.button__btn En

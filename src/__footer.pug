@@ -1,0 +1,22 @@
+.footer 
+  .footer__up 
+    img.footer__logo(src="./img/headerLogo.png", alt="логотип компаний Курылыс")
+    ul.footer__list 
+      li.footer__item(class=page === 'home' ? 'active' : '', href="index.html")
+        a.footer__link(href="/") Главная
+      li.footer__item(class=page === 'about' ? 'active' : '', href="about.html")
+        a.footer__link(href="about.html") О нас
+      li.footer__item(class=page === 'projects' ? 'active' : '', href="projects.html")
+        a.footer__link(href="projects.html") Проекты
+      li.footer__item(class=page === 'contacts' ? 'active' : '', href="contacts.html")
+        a.footer__link(href="contacts.html") Контакты
+      li.footer__item(class=page === 'news' ? 'active' : '', href="news.html")
+        a.footer__link(href="news.html") Новости
+    .footer__contacts 
+      span.footer__item Контакты
+      span.footer__item-soft Адрес: Казахстан, г. Название, дом&nbsp;12
+      span.footer__item-soft Телефон: +7 (777) 777 77&nbsp;77
+  .footer__down 
+    span.footer__item-soft ABC DESIGN
+    svg.footer__svg 
+      use(xlink:href="./img/sprite.svg#insta")

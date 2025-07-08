@@ -1,0 +1,75 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Kurylys
+    link(rel="stylesheet", href="./css/style.css")
+    link(rel="stylesheet", href="./css/contactsStyle.css")
+    script(defer, src="./scripts/script.js")
+  body 
+    - var page = 'contacts'
+    header.header__wrap
+      .container 
+        include __header.pug
+        .hero
+          h1.hero__title Контакты
+          p.hero__descr Свяжитесь с&nbsp;нами любым удобным способом
+          .hero__btnWrap 
+            button.primaryBtn
+              a(href="projects.html")  Наши проекты
+              svg.hero__btnSvg 
+                use(xlink:href="./img/sprite.svg#ourProjects")
+            button.secondaryBtn 
+              a(href="#bid") Связаться с&nbsp;нами
+          a(href="#onMap").hero__anchor 
+            svg.hero__svg-anchor 
+              use(xlink:href="./img/sprite.svg#anchor")
+    main 
+      section#onMap.onMap 
+        .container 
+          .onMap__content 
+            .onMap__info 
+              .onMap__location 
+                .onMap__infoWrap 
+                  svg.onMap__svg 
+                    use(xlink:href="./img/sprite.svg#local")
+                  span.onMap__hard Казахстан, г. Название, дом&nbsp;12
+                .onMap__infoWrap 
+                  svg.onMap__svg 
+                    use(xlink:href="./img/sprite.svg#google")
+                  span.onMap__soft Google maps
+                .onMap__infoWrap 
+                  svg.onMap__svg 
+                    use(xlink:href="./img/sprite.svg#gis")
+                  span.onMap__soft 2GIS/2ГИС
+              .onMap__time 
+                .onMap__infoWrap 
+                  svg.onMap__svg 
+                    use(xlink:href="./img/sprite.svg#time")
+                  .onMap__timeWrap 
+                    span.onMap__soft Пн-Пт: 08:30-17:30
+                    span.onMap__soft Сб-Вс: выходной
+              .onMap__contact
+                .onMap__infoWrap 
+                  svg.onMap__svg 
+                    use(xlink:href="./img/sprite.svg#call")
+                  span.onMap__soft +7 (777) 777 77&nbsp;77
+                .onMap__infoWrap 
+                  svg.onMap__svg 
+                    use(xlink:href="./img/sprite.svg#mail")
+                  span.onMap__soft info@primer.kz
+            img.onMap__image(src="../img/onMap.png", alt="на карте")  
+      section#bid.bid 
+        .container 
+          .bid__content 
+            h2.titleWhite.bid__title Оставьте заявку
+            p.bid__descr Оставьте заявку и&nbsp;наш менеджер свяжется с&nbsp;Вами в&nbsp;ближайшее рабочее время.
+            .bid__inputWrap 
+              input.bid__input.bid__input-first(type="text", placeholder="Ваше имя")
+              input.bid__input.bid__input-second(type="tel", placeholder="Телефон")
+              input.bid__input.bid__input-big(type="text", placeholder="Суть обращения")
+            button.bid__button Отправить
+    footer.footer__wrap 
+      .container 
+        include __footer.pug

@@ -1,0 +1,69 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Kurylys
+    link(rel="stylesheet", href="./css/style.css")
+    link(rel="stylesheet", href="./css/cardProjectStyle.css")
+    script(defer, src="./scripts/script.js")
+  body 
+    - var page = 'projects'
+    header.header__wrap
+      .container 
+        include __header.pug
+        .hero
+          h1.hero__title ЖК&nbsp;Asyl park
+          p.hero__descr Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта.
+          button.secondaryBtn 
+              a(href="contacts.html") Связаться с&nbsp;нами
+          a(href="#about").hero__anchor 
+              svg.hero__svg-anchor 
+                use(xlink:href="./img/sprite.svg#anchor")
+    main 
+      section#about.about 
+        .container
+          .about__content 
+            .about__info 
+              h2.about__title Наша гордость
+              p.about__descr Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта.
+              button.primaryBtn
+                a(href="about.html")  Наши проекты
+                svg.hero__btnSvg 
+                  use(xlink:href="./img/sprite.svg#ourProjects")
+            ul.about__list 
+              li.about__item.about__item-first
+                span.about__score 2.5 ГА
+                span.about__infor Общая площадь
+              li.about__item.about__item-second
+                span.about__score 2025
+                span.about__infor Сдача проекта
+              li.about__item.about__item-third
+                span.about__score-third лого
+                span.about__infor Заказчик
+      section.gallery 
+        .container 
+          .gallery__content
+            h2.title.gallery__title Галерея проекта
+            ul.gallery__list 
+              li.gallery__item-first 
+                img.gallery__img(src="../img/gallery_first.png", alt="фото сада")
+              li.gallery__item-second 
+                img.gallery__img(src="../img/gallery_second.png", alt="фото сада")
+              li.gallery__item-third 
+                img.gallery__img(src="../img/gallery_third.png", alt="фото сада")
+              li.gallery__item-fourth 
+                img.gallery__img(src="../img/gallery_fourth.png", alt="фото сада")
+      section.geo 
+        .container 
+          .geo__content 
+            h2.geo__title Расположение объекта
+            p.geo__descr Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта.
+      section.object 
+        .container 
+          .object__content 
+            h2.title.object__title Местоположение объекта
+            img(src="../img/object.png", alt="нахождение обьекта на карте")
+    footer.footer__wrap
+      .container 
+        include __footer.pug

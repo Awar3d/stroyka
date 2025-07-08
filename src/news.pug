@@ -1,0 +1,74 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Kurylys
+    link(rel="stylesheet", href="./css/style.css")
+    link(rel="stylesheet", href="./css/newsStyle.css")
+    script(defer, src="./scripts/script.js")
+  body 
+    - var page = 'news'
+    header.header__wrap
+      .container 
+        include __header.pug
+        .hero
+          h1.hero__title Новости
+          p.hero__descr Новости, события из&nbsp;жизни компании
+          .hero__btnWrap 
+            button.primaryBtn
+              a(href="projects.html")  Наши проекты
+              svg.hero__btnSvg 
+                use(xlink:href="./img/sprite.svg#ourProjects")
+            button.secondaryBtn 
+              a(href="contacts.html") Связаться с&nbsp;нами
+          a(href="#newsUs").hero__anchor 
+            svg.hero__svg-anchor 
+              use(xlink:href="./img/sprite.svg#anchor")
+    main 
+      section#newsUs.newsUs 
+        .container 
+          h2.title.newsUs__title Новости о&nbsp;нас
+          ul.newsUs__list 
+            li.newsUs__item
+                img.newsUs__img(src="../img/news.png", alt="фото новостей")
+                span.newsUs__date 01.05.2025
+                h3.newsUs__subtitle Название новости
+                p.newsUs__descr Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости.
+            li.newsUs__item
+                img.newsUs__img(src="../img/news.png", alt="фото новостей")
+                span.newsUs__date 01.05.2025
+                h3.newsUs__subtitle Название новости
+                p.newsUs__descr Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости.
+            li.newsUs__item
+                img.newsUs__img(src="../img/news.png", alt="фото новостей")
+                span.newsUs__date 01.05.2025
+                h3.newsUs__subtitle Название новости
+                p.newsUs__descr Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости.
+            li.newsUs__item
+                img.newsUs__img(src="../img/news.png", alt="фото новостей")
+                span.newsUs__date 01.05.2025
+                h3.newsUs__subtitle Название новости
+                p.newsUs__descr Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости.
+            li.newsUs__item
+                img.newsUs__img(src="../img/news.png", alt="фото новостей")
+                span.newsUs__date 01.05.2025
+                h3.newsUs__subtitle Название новости
+                p.newsUs__descr Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости.
+            li.newsUs__item
+                img.newsUs__img(src="../img/news.png", alt="фото новостей")
+                span.newsUs__date 01.05.2025
+                h3.newsUs__subtitle Название новости
+                p.newsUs__descr Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости.
+      section.bid 
+        .container 
+          .bid__content 
+            h2.titleWhite.bid__title Будь в курсе последних новостей!
+            .bid__inputWrap 
+              input.bid__input.bid__input-first(type="text", placeholder="Ваше имя")
+              input.bid__input.bid__input-second(type="tel", placeholder="Телефон")
+              input.bid__input.bid__input-big(type="text", placeholder="Суть обращения")
+            button.bid__button Отправить
+    footer.footer__wrap 
+      .container 
+        include __footer.pug

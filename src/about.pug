@@ -1,0 +1,84 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Kurylys
+    link(rel="stylesheet", href="./css/style.css")
+    link(rel="stylesheet", href="./css/aboutStyle.css")
+    script(defer, src="./scripts/script.js")
+  body 
+    - var page = 'about'
+    header.header__wrap
+      .container 
+        include __header.pug
+        .hero
+          h1.hero__title О&nbsp;НАШЕЙ КОМПАНИИ
+          p.hero__descr Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта.
+          .hero__btnWrap 
+            button.primaryBtn
+              a(href="projects.html")  Наши проекты
+              svg.hero__btnSvg 
+                use(xlink:href="./img/sprite.svg#ourProjects")
+            button.secondaryBtn 
+              a(href="contacts.html") Связаться с&nbsp;нами
+          a(href="#activity").hero__anchor 
+            svg.hero__svg-anchor 
+              use(xlink:href="./img/sprite.svg#anchor")
+    main 
+      section#activity.activity 
+        .container 
+          .activity__content 
+            h2.activity__title Текущая деятельность
+            p.activity__descr Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта.
+      section.experience 
+        .container 
+          .experience__content 
+            h2.experience__title Как давно работаем
+            p.experience__descr Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта.
+      section.pride 
+        .container 
+          .pride__content 
+            h2.pride__title Наша гордость
+            p.pride__descr Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта.
+          ul.pride__list 
+            li.pride__item 
+              span.pride__score 100+
+              span.pride__info завершённых проектов
+            li.pride__item 
+              span.pride__score 50+
+              span.pride__info постоянных клиентов
+            li.pride__item 
+              span.pride__score 15
+              span.pride__info лет опыта
+            li.pride__item 
+              span.pride__score 99+
+              span.pride__info Положительных отзывов
+      section.mission 
+        .container 
+          .mission__content 
+            h2.mission__title Наша миссия
+            p.mission__descr Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта.
+      section.team 
+        .container 
+          .team__content 
+            h2.team__title Наша команда
+            ul.team__list 
+              - for (var i = 1; i <= 6; i++)
+                li.team__item 
+                  img.team__img(src="../img/team.png", alt="фото человека в команде")
+                  h3.team__divtitle Ахметов Ахмет
+                  p.team__descr Генеральный директор
+      section.bid 
+        .container 
+          .bid__content 
+            h2.titleWhite.bid__title Оставьте заявку
+            p.bid__descr Оставьте заявку и&nbsp;наш менеджер свяжется с&nbsp;Вами в&nbsp;ближайшее рабочее время.
+            .bid__inputWrap 
+              input.bid__input.bid__input-first(type="text", placeholder="Ваше имя")
+              input.bid__input.bid__input-second(type="tel", placeholder="Телефон")
+              input.bid__input.bid__input-big(type="text", placeholder="Суть обращения")
+            button.bid__button Отправить
+    footer.footer__wrap
+      .container 
+        include __footer.pug

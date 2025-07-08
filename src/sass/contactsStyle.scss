@@ -1,0 +1,129 @@
+.onMap__content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
+    margin-bottom: 75px;
+
+    .onMap__info{
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+
+      .onMap__location,
+      .onMap__time,
+      .onMap__contact{
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        padding: 48px 70px 49px 49px;
+        border-radius: 32px;
+        border: 1px solid #D5D5D5;
+        justify-content: center;
+      }
+
+      .onMap__time, .onMap__contact{
+        max-height: 125px;
+      }
+
+      .onMap__infoWrap{
+          display: flex;
+          gap: 21px;
+
+          .onMap__svg{
+            width: 22px;
+            height: 22px;
+          }
+
+          .onMap__timeWrap{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+          }
+
+          .onMap__hard{
+            color: #151515;
+            font-family: Open Sans;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 17px;
+          }
+
+          .onMap__soft{
+            color: #777777;
+            font-family: Open Sans;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+          }
+        }
+    }
+    .onMap__image{
+      border-radius: 32px;
+    }
+
+}
+
+.bid{
+  margin-bottom: 100px;
+
+  .bid__content{
+    background-image: url('../img/bidAbout.png');
+    background-repeat: no-repeat;
+    padding: 78px 272px;
+
+    .bid__title{
+      margin-bottom: 30px;
+    }
+
+    .bid__descr{
+      color: #AFAFAF;
+      font-family: Open Sans;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 19px;
+      margin-bottom: 30px;
+      max-width: 609px;
+    }
+
+    .bid__inputWrap{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 15px;
+      margin-bottom: 26px;
+      margin-top: 30px;
+
+      .bid__input{
+        color: #DADADA;
+        padding: 21px 0 21px 20px;
+        background-color: #FFFFFF4D;
+        border: none;
+        border-radius: 10px;
+      }
+
+      .bid__input::placeholder{
+        color: #DADADA;
+      }
+
+      .bid__input-first{
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .bid__input-second{
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .bid__input-first{
+        grid-column: 1/3;
+        grid-row: 2;
+      }
+    }
+
+    .bid__button{
+      color: #FFFFFF;
+      padding: 13px 58px;
+      background-color: #345389;
+      border-radius: 100px;
+    }
+  }
+}

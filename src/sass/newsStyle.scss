@@ -1,0 +1,115 @@
+.newsUs{
+  .newsUs__title{
+    margin-bottom: 40px;
+  }
+
+  .newsUs__list{
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+    list-style: none;
+
+    .newsUs__item{
+      display: flex;
+      flex-direction: column;
+
+        .newsUs__img{
+          margin-bottom: 10px;
+        }
+
+        .newsUs__date{
+          color: #666666;
+          font-family: Open Sans;
+          font-weight: 300;
+          font-style: Light;
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+
+        .newsUs__subtitle{
+          color: #1D1D1D;
+          font-family: Open Sans;
+          font-weight: 400;
+          font-style: Regular;
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        .newsUs__descr{
+          color: #666666;
+          font-family: Open Sans;
+          font-weight: 300;
+          font-style: Light;
+          font-size: 16px;
+          max-width: 340px;
+        }
+    }
+  }
+}
+
+.bid{
+  margin-bottom: 100px;
+
+  .bid__content{
+    background-image: url('../img/news_bid.png');
+    background-repeat: no-repeat;
+    padding: 78px 272px;
+
+    .bid__title{
+      margin-bottom: 30px;
+    }
+
+    .bid__descr{
+      color: #AFAFAF;
+      font-family: Open Sans;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 19px;
+      margin-bottom: 30px;
+      max-width: 609px;
+    }
+
+    .bid__inputWrap{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 15px;
+      margin-bottom: 26px;
+      margin-top: 30px;
+
+      .bid__input{
+        color: #DADADA;
+        padding: 21px 0 21px 20px;
+        background-color: #FFFFFF4D;
+        border: none;
+        border-radius: 10px;
+      }
+
+      .bid__input::placeholder{
+        color: #DADADA;
+      }
+
+      .bid__input-first{
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .bid__input-second{
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .bid__input-first{
+        grid-column: 1/3;
+        grid-row: 2;
+      }
+    }
+
+    .bid__button{
+      color: #FFFFFF;
+      padding: 13px 58px;
+      background-color: #345389;
+      border-radius: 100px;
+    }
+  }
+}

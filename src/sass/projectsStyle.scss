@@ -1,0 +1,175 @@
+.header__wrap{
+  margin-bottom: 0;
+}
+
+.map{
+  background-image: url('../img/circle.png');
+  background-position: bottom;
+  padding-bottom: 90px;
+}
+
+.build{
+  margin-bottom: 100px;
+
+  .build__list{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 32px;
+      list-style: none;
+
+      .build__item{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        background-color: #F6F6F6;
+        min-height: 478px;
+        justify-content: end;
+        background-image: url('../img/jk.png');
+        background-repeat: no-repeat;
+        background-position: 30px 30px;
+        border-radius: 32px;
+
+        .build__subtitle{
+          color: #000000;
+          font-family: Open Sans;
+          font-weight: 600;
+          font-style: SemiBold;
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+
+        .build__descr{
+          color: #000000;
+          font-family: Open Sans;
+          font-weight: 400;
+          font-style: Regular;
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+
+        .build__info{
+          display: flex;
+          justify-content: space-between;
+
+          .build__infoReq{
+            color: #000000;
+            font-family: Open Sans;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+          }
+
+          .build__infoAns{
+            color: #000000;
+            font-family: Open Sans;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+          }
+        }
+
+        .build__info:not(:last-child){
+          margin-bottom: 10px;
+        }
+      }
+    }
+}
+
+.art{
+  margin-bottom: 100px;
+
+  .art__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 132px 0 132px 667px;
+    background-image: url('../img/art.png');
+    background-repeat: no-repeat;
+    border-radius: 32px;
+    margin-bottom: 100px;
+
+    .art__title{
+      color: #1D1D1D;
+      font-family: Fira Sans;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+
+    .art__descr{
+      color: #666666;
+      font-family: Open Sans;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 18px;
+      max-width: 525px;
+    }
+  }
+}
+
+.bid{
+  margin-bottom: 100px;
+
+  .bid__content{
+    background-image: url('../img/bidAbout.png');
+    background-repeat: no-repeat;
+    padding: 78px 272px;
+
+    .bid__title{
+      margin-bottom: 30px;
+    }
+
+    .bid__descr{
+      color: #AFAFAF;
+      font-family: Open Sans;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 19px;
+      margin-bottom: 30px;
+      max-width: 609px;
+    }
+
+    .bid__inputWrap{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 15px;
+      margin-bottom: 26px;
+      margin-top: 30px;
+
+      .bid__input{
+        color: #DADADA;
+        padding: 21px 0 21px 20px;
+        background-color: #FFFFFF4D;
+        border: none;
+        border-radius: 10px;
+      }
+
+      .bid__input::placeholder{
+        color: #DADADA;
+      }
+
+      .bid__input-first{
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .bid__input-second{
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .bid__input-first{
+        grid-column: 1/3;
+        grid-row: 2;
+      }
+    }
+
+    .bid__button{
+      color: #FFFFFF;
+      padding: 13px 58px;
+      background-color: #345389;
+      border-radius: 100px;
+    }
+  }
+}

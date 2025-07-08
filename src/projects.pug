@@ -1,0 +1,64 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Kurylys
+    link(rel="stylesheet", href="./css/style.css")
+    link(rel="stylesheet", href="./css/projectsStyle.css")
+    script(defer, src="./scripts/script.js")
+  body 
+    - var page = 'projects'
+    header.header__wrap
+      .container 
+        include __header.pug
+        .hero
+          h1.hero__title НАШИ ПРОЕКТЫ
+          p.hero__descr Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта.
+          .hero__btnWrap 
+            button.secondaryBtn 
+              a(href="contacts.html") Связаться с&nbsp;нами
+          a(href="#map").hero__anchor 
+            svg.hero__svg-anchor 
+              use(xlink:href="./img/sprite.svg#anchor")
+    main 
+      section#map.map 
+        .container 
+          .map__content 
+            img.map__image(src="../img/map.png", alt="карта Казахстана")
+      section.build 
+        .container 
+          .build__content 
+            ul.build__list 
+              - for (var i = 1; i <= 12; i++)
+                a(href="cardProject.html") 
+                  li.build__item 
+                    h3.build__subtitle ЖК Asyl park
+                    span.build__descr Информация о проекте
+                    .build__info
+                      span.build__infoReq Площадь:
+                      span.build__infoAns 76,80 - 105,90 м2
+                    .build__info
+                      span.build__infoReq Сдача проекта:
+                      span.build__infoAns 2025
+                    .build__info
+                      span.build__infoReq Регион:
+                      span.buildp__infoAns Мангистауская область
+      section.art 
+        .container 
+          .art__content  
+            h2.art__title Мы строим искусство
+            p.art__descr Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта. Это текст о&nbsp;компании. Он&nbsp;необходим для дальнейшего продвижения Вашего сайта.
+      section.bid 
+        .container 
+          .bid__content 
+            h2.titleWhite.bid__title Оставьте заявку
+            p.bid__descr Оставьте заявку и&nbsp;наш менеджер свяжется с&nbsp;Вами в&nbsp;ближайшее рабочее время.
+            .bid__inputWrap 
+              input.bid__input.bid__input-first(type="text", placeholder="Ваше имя")
+              input.bid__input.bid__input-second(type="tel", placeholder="Телефон")
+              input.bid__input.bid__input-big(type="text", placeholder="Суть обращения")
+            button.bid__button Отправить
+    footer.footer__wrap
+      .container  
+        include __footer.pug
